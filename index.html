@@ -10,7 +10,7 @@
 </head>
 <body>
     <header class="header">
-        <nav class="navbar_desktop">
+        <nav class="navbar__desktop">
             <ul>
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="#recipes">Recipes</a></li>
@@ -24,57 +24,60 @@
             </ul>
         </nav>
 
-        <nav class="navbar_mobile">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+        <nav class="navbar__mobile">
+            <h1 class="logo">ODIN RECIPES</h1>
+            <div class="navbar__hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
     </header>
 
     <main class="container">
         <!-- display: grid - columnas x 4 - filas x 4 -->
         <section id="hero" class="hero">
-            <div class="hero_big">
+            <div class="hero__big">
                 <h2>The healthy way to start your day!</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis dolores suscipit asperiores, eaque doloribus explicabo?</p>
-                <a href="#recipes">View recipes</a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi convallis diam lacinia, pulvinar dolor nec, luctus sapien. Donec euismod lobortis iaculis. Pellentesque habitant morbi tristique senectus et netus et  malesuada fames ac turpis egestas. </p>
+                <a class="hero__big-cto" href="#recipes">View recipes</a>
             </div>
 
-            <div class="hero_small-box">
-                <p>What are you going to try today?</p>
-            </div>
-
-            <div class="hero_medium-box">
+            <div class="hero__small-box">
                 <img src="./assets/media/potato.png" alt="A delicious Bulgogi" />
             </div>
 
-            <div class="hero_larger-box">
+            <div class="hero__medium-box">
+                <p>What are you going to try today?</p>
+            </div>
+
+            <div class="hero__larger-box">
                 <p>Find the recipe of the day!</p>
             </div>
 
-            <div class="hero_image2-box">
+            <div class="hero__image2-box">
                 <img src="./assets/media/green-food.png" alt="">
             </div>
         </section>
 
         <!-- about section -> display flex y wrap, además grid en about_images -->
          <section id="about" class="about">
-            <div class="about_content">
+            <div class="about__content">
                 <h2>Hi! This is Odin</h2>
                 <p>Welcome to our food blog!</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas praesentium necessitatibus laudantium veritatis autem fuga assumenda ullam odit quod cumque?</p>
                 <a href="#">More about us</a>
             </div>
-            <div class="about_images">
-                <div class="img-large">
-                    <img src="#" alt="">
+            <div class="about__images">
+                <div class="img__large">
+                    <img src="./assets/media/chef.jpg" alt="">
                 </div>
-                <div class="img-medium">
-                    <img src="#" alt="">
+                <div class="img__medium">
+                    <img src="./assets/media/baker.jpg" alt="">
                 </div>
-                <div class="img-small">
-                    <img src="#" alt="">
+                <div class="img__small">
+                    <img src="./assets/media/bread.jpg" alt="">
                 </div>
             </div>
          </section>
@@ -82,7 +85,7 @@
          <!-- recipes section -> display: flex, direction: column -->
           <section id="recipes" class="recipes">
             <h2>Have you thought about what you're going to cook today?</h2>
-            <div class="recipes_container">
+            <div class="recipes__container">
                 <div class="card">
                     <a href="#">
                         <img src="./assets/media/hamburguer.png" alt="A Chicken Burger image" />
@@ -115,10 +118,10 @@
 
           <!-- shop section -> shop_img en display none cuando se está en mobile -->
           <section id="shop" class="shop">
-            <div class="shop_img">
+            <div class="shop__img">
                 <img src="./assets/media/shop-burger.jpg" alt="">
             </div>
-            <div class="shop-cto">
+            <div class="shop__cto">
                 <p>Visit our online store and discover much more!</p>
                 <a href="#">Visit</a>
             </div>
@@ -126,22 +129,22 @@
     </main>
 
     <footer class="footer">
-        <div class="footer_container">
-            <div class="footer-logo">
+        <div class="footer__container">
+            <div class="footer__logo">
                 <h2>ODIN RECIPES</h2>
             </div>
-            <div class="footer_forum-box">
+            <div class="footer__forum-box">
                 <a href="#">Discover [your] creativity in cooking</a>
             </div>
-            <div class="footer_contact-box">
+            <div class="footer__contact-box">
                 <a href="#">Say Hello >> 💌</a>
             </div>
-            <div class="footer_socials-box">
+            <div class="footer__socials-box">
                 <a href="#">F</a>
                 <a href="#">IG</a>
                 <a href="#">X</a>
             </div>
-            <div class="footer_navbar">
+            <div class="footer__navbar">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Recipes</a></li>
@@ -151,7 +154,7 @@
                     <li><a href="#">Shop</a></li>
                 </ul>
             </div>
-            <div class="footer_politics">
+            <div class="footer__politics">
                 <p>Design and Coded by Villarroel Giuliana | 2025 All Rights Reserved</p>
                 <a href="#">PRIVACY POLICY</a>
                 <a href="#">TERMS & CONDITIONS</a>
