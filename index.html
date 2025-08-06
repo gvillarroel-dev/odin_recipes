@@ -2,37 +2,161 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="This is a simple HTML document0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/media/favicon.svg" type="image/x-icon">
     <title>Odin Recipes</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
+    <header class="header">
+        <nav class="navbar_desktop">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#recipes">Recipes</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <h1 class="logo">ODIN RECIPES</h1>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#">Forum</a></li>
+                <li><a href="#shop">Shop</a></li>
+            </ul>
+        </nav>
+
+        <nav class="navbar_mobile">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </nav>
+    </header>
+
     <main class="container">
-        <div class="heading">
-            <h1>Odin Recipes</h1>
-            <p>Find the latest recipes from Odin-recipes here and try them yourself!</p>
-        </div>
-        <div class="card_container">
-            <div class="card">
-                <a class="" href="./assets/pages/lasagna.html">
-                    <p class="card_text left-align">LA <br> SAG <br> NA</p>
-                </a>
+        <!-- display: grid - columnas x 4 - filas x 4 -->
+        <section id="hero" class="hero">
+            <div class="hero_big">
+                <h2>The healthy way to start your day!</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis dolores suscipit asperiores, eaque doloribus explicabo?</p>
+                <a href="#recipes">View recipes</a>
             </div>
-            <div class="card">
-                <a href="./assets/pages/takoyaki.html">
-                    <p class="card_text">TA <br> KO <br> YA <br> KI</p>
-                </a>
+
+            <div class="hero_small-box">
+                <p>What are you going to try today?</p>
             </div>
-            <div class="card">
-                <a href="./assets/pages/bulgogi.html">
-                    <p class="card_text right-align">BUL <br>GO <br>GI</p>
-                </a>
+
+            <div class="hero_medium-box">
+                <img src="./assets/media/potato.png" alt="A delicious Bulgogi" />
             </div>
-        </div>
+
+            <div class="hero_larger-box">
+                <p>Find the recipe of the day!</p>
+            </div>
+
+            <div class="hero_image2-box">
+                <img src="./assets/media/green-food.png" alt="">
+            </div>
+        </section>
+
+        <!-- about section -> display flex y wrap, además grid en about_images -->
+         <section id="about" class="about">
+            <div class="about_content">
+                <h2>Hi! This is Odin</h2>
+                <p>Welcome to our food blog!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas praesentium necessitatibus laudantium veritatis autem fuga assumenda ullam odit quod cumque?</p>
+                <a href="#">More about us</a>
+            </div>
+            <div class="about_images">
+                <div class="img-large">
+                    <img src="#" alt="">
+                </div>
+                <div class="img-medium">
+                    <img src="#" alt="">
+                </div>
+                <div class="img-small">
+                    <img src="#" alt="">
+                </div>
+            </div>
+         </section>
+
+         <!-- recipes section -> display: flex, direction: column -->
+          <section id="recipes" class="recipes">
+            <h2>Have you thought about what you're going to cook today?</h2>
+            <div class="recipes_container">
+                <div class="card">
+                    <a href="#">
+                        <img src="./assets/media/hamburguer.png" alt="A Chicken Burger image" />
+                        <p>Fresh Chicken Burger</p>
+                    </a>
+                </div>
+
+                <div class="card">
+                    <a href="#">
+                        <img src="./assets/media/pizza.png" alt="A pizza image" />
+                        <p>Super easy pizza</p>
+                    </a>
+                </div>
+
+                <div class="card">
+                    <a href="#">
+                        <img src="./assets/media/tacos.jpg" alt="image of tacos al pastor" />
+                        <p>Super spicy tacos</p>
+                    </a>
+                </div>
+
+                <div class="card">
+                    <a href="#">
+                        <img src="./assets/media/sushi.jpg" alt="image of a plate of fresh sushi" />
+                        <p>Masterful sushi</p>
+                    </a>
+                </div>
+            </div>
+          </section>
+
+          <!-- shop section -> shop_img en display none cuando se está en mobile -->
+          <section id="shop" class="shop">
+            <div class="shop_img">
+                <img src="./assets/media/shop-burger.jpg" alt="">
+            </div>
+            <div class="shop-cto">
+                <p>Visit our online store and discover much more!</p>
+                <a href="#">Visit</a>
+            </div>
+          </section>
     </main>
 
     <footer class="footer">
-        <p class="description">Coded and Designed by: <a href="https://github.com/gvillarroel-dev">Villarroel Giuliana</a> - This is a project to practice HTML and CSS.</p>
+        <div class="footer_container">
+            <div class="footer-logo">
+                <h2>ODIN RECIPES</h2>
+            </div>
+            <div class="footer_forum-box">
+                <a href="#">Discover [your] creativity in cooking</a>
+            </div>
+            <div class="footer_contact-box">
+                <a href="#">Say Hello >> 💌</a>
+            </div>
+            <div class="footer_socials-box">
+                <a href="#">F</a>
+                <a href="#">IG</a>
+                <a href="#">X</a>
+            </div>
+            <div class="footer_navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Recipes</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Forum</a></li>
+                    <li><a href="#">Shop</a></li>
+                </ul>
+            </div>
+            <div class="footer_politics">
+                <p>Design and Coded by Villarroel Giuliana | 2025 All Rights Reserved</p>
+                <a href="#">PRIVACY POLICY</a>
+                <a href="#">TERMS & CONDITIONS</a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
